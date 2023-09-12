@@ -170,6 +170,24 @@ nav{
         border-radius: 1.25rem;
         transition: .4s;
     }
+
+    .nav__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav__link{
+        color: var(--cor-texto);
+        display: flex;
+        padding: .5rem;
+        border-radius: 50%;
+    }
+    .nav__link i{
+        font-size: 1.25rem;
+    }
+    .nav__link span{
+        display: none;
+    }
 }
 
 /*17m20s*/
