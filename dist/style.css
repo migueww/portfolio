@@ -7,13 +7,15 @@
 :root{
     --header-height: 3.5rem;
 
-    --cor-primaria: #;
-    --cor-secundaria: #;
-    --cor-titulo: #;
-    --cor-texto: #;
-    --cor-borda: #;
-    --cor-body: #;
-    --cor-container: #;
+    --cor-primaria: #68CCF5;
+    --cor-primaria-clara: #B1E3F7;
+    --cor-secundaria: #F5B267;
+    --cor-titulo: #3688A8;
+    --cor-texto: #546C75;
+    --cor-texto-clara: #B1E3F7;
+    --cor-borda: #B1E3F7;
+    --cor-body: #fff;
+    --cor-container: #fff;
     
     --body-font: 'Poppins', sans-serif;
     --font-h1: 1.5rem;
