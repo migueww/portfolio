@@ -6,3 +6,15 @@ const scrollHeader = () =>{
                        : header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+var swiperProjects = new Swiper("projects2__container", {
+    spaceBetween: 32,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    loop: true,
+    navigation: {
+        nextEL: ".swiper-button-next",
+        prevEL: ".swiper-button-prev",
+    },
+});

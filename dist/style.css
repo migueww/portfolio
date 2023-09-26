@@ -365,6 +365,67 @@ button:hover{
     border-radius: 1.25rem;
 }
 
+.projects__title{
+    font-size: var(--font-h3);
+    margin-bottom: .5rem;
+}
 
+.projects__description{
+    font-size: var(--font-menor);
+}
 
-/*25m30s*/
+.projects__title{
+    text-align: initial;
+    margin-bottom: 2rem;
+}
+
+.projects__description{
+    margin-bottom: 2rem;
+}
+
+/*projetinhos2*/
+
+.projects2__container{
+    padding: 1rem 0 5rem;
+}
+
+.projects2__card{
+    width: 290;
+    background-color: var(--cor-container);
+    padding: .5rem .5rem 1.5rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    transition: .4s;
+}
+
+.projects2__img{
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.projects2__data{
+    padding: 0 1rem 0 .5rem;
+}
+
+.projects2__price{
+    font-size: var(--font-h2);
+    color: var(--cor-texto);
+    margin-bottom: .25rem;
+}
+
+.projects2__price span{
+    color: var(--cor-secundaria);
+}
+
+.projects2__title{
+    font-size: var(--font-h3);
+    margin-bottom: .75rem;
+}
+
+.projects2__description{
+    font-size: var(--font-menor);
+}
+
+.projects2__card:hover{
+    box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
+}
