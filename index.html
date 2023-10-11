@@ -10,70 +10,565 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         
         <!--=============== Swiper ===============-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         <title>Miguew Barcellos</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
-            
+            <nav class="nav container">
+                <a href="" class="nav__logo">
+                    Miguew
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="ri-home-line"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="ri-medal-2-line"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualificacao" class="nav__link">
+                                <i class="ri-git-repository-line"></i> Qualificação
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#projetos" class="nav__link">
+                                <i class="ri-image-line"></i> Projetos
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link"> 
+                                <i class="ri-user-6-line"></i> Sobre
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contato" class="nav__link">
+                                <i class="ri-chat-3-line"></i> Contate-me
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__buttons">
+
+                    <!-- Mudar tema -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-4-line"></i>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <!--==================== MAIN ====================-->
         <main class="main">
+
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
-                
+                <div class="home__container container grid section__border">
+                    <div class="home__data grid">
+                        <h1 class="home__title">
+                            Olá, eu sou o Miguel <br>
+                            Desenvolvedor Backend PHP <br>
+                            Seilá mais oq <br>
+                        </h1>
+                        <div class="home__blob grid">
+                            <div class="home__perfil">
+                                <img src="assets/img/perfil.png" alt="">
+                            </div>
+                            <img src="assets/img/shape-wawes.svg" alt="" class="home__shape-wawes">
+                            <img src="assets/img/shape-circle.svg" alt="" class="home__shape-circle">
+                        </div>
+
+                        <ul class="home__social">
+                             <a href="" target="_blank" class="home__social-link"> <!--=====TODO adicionar os links=====-->
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+                            <a href="" target="_blank" class="home__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                            <a href="" target="_blank" class="home__social-link"> 
+                                <i class="ri-file-pdf-line"></i>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <!-- ========= HOME LEFT ========== -->
+                    <div class="home__info">
+                        <div>
+                            <h3 class="home__info-title">
+                                Sobre Mim
+                            </h3>
+                            <p class="home__info-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veritatis doloremque, incidunt impedit placeat 
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="home__info-title">
+                                Contato
+                            </h3>
+                            <p class="home__info-description">
+                                Osasco, SP <br>
+                                miguew.png@gmail.com <br>
+                                11 9361-89417 <br>
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="home__info-title">
+                                Tecnologias
+                            </h3>
+                            <p class="home__info-description">
+                                Php, Laravel <br>
+                                HTML, Css, JavaScript <br>
+                                SQL e MongoDB <br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ========= HOME RIGHT ========== -->
+                    <div class="home__info">
+                        <div>
+                            <h3 class="home__info-title">
+                                Experiência na área
+                            </h3>
+                            <p class="home__info-number">
+                                2+
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="home__info-title">
+                                Projetos completos
+                            </h3>
+                            <p class="home__info-number">
+                                16
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="home__info-title">
+                                Dinheiro feito
+                            </h3>
+                            <p class="home__info-number">
+                                - R$ 245
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
             </section>
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
-                
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">Minhas habilidades favoritas</span>
+
+                <div class="skills__container container grid section__border">
+                <!-- ========= SKILLS LEFT ========== -->    
+                    <div class="skills__content">
+                        <h3 class="skills__title">                      <!-- TODO mudar os icones -->
+                             <i class="ri-braces-line"></i> Hardskills <!-- https://worldvectorlogo.com/ -->
+                        </h3>
+
+                        <div class="skills__info">
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/html-1.svg" alt="">
+                                </div>
+
+                                <h3 class="skills__name">HTML</h3>
+                                <span class="skills__subtitle">Avançado</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/css-3.svg" alt="">
+                                </div>
+
+                                <h3 class="skills__name">CSS</h3>
+                                <span class="skills__subtitle">Intermediario</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/logo-javascript.svg" alt="">
+                                </div>
+
+                                <h3 class="skills__name">JavaScript</h3>
+                                <span class="skills__subtitle">Intermediario</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/figma-1.svg" alt="">
+                                </div>
+
+                                <h3 class="skills__name">PHP</h3>
+                                <span class="skills__subtitle">Avançado</span>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/figma-1.svg" alt="">
+                                </div>
+
+                                <h3 class="skills__name">Laravel</h3>
+                                <span class="skills__subtitle">Avançado</span>
+                            </div>
+                        </div>
+                    </div>
+                <!-- ========= SKILLS RIGHT ========== -->
+                    <div class="skills__content">
+                        <h3 class="skills__title">
+                            <i class="ri-pantone-line"></i> Softskills
+                        </h3>
+
+                        <div class="skills__info">
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/git-icon.svg" alt="">
+                                </div>
+
+                                <h3 class="skills__name">Autodidata</h3>
+                                <span class="skills__subtitle">Avançado??</span>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="assets/img/git-icon.svg" alt="">
+                                </div>
+
+                                <h3 class="skills__name">seila mano</h3>
+                                <span class="skills__subtitle">seila mano2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section" id="qualification">
-                
-            </section>
+            <section class="qualification section" id="qualificacao">
+                <h2 class="section__title">Qualificação</h2>
+                <span class="section__subtitle">Experiência & Formações</span>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
+                <div class="qualification__container container grid section__border">
+                    <!-- ========= QUALIFICATION LEFT ========== -->
+                    <div class="qualification__content">
+                        <h3 class="qualification__title">
+                            <i class="ri-building-line"></i> Educação
+                        </h3>
+                        <div class="qualification__info">
+                            <div>
+                                <h3 class="qualification__name">
+                                    Tecnico em Desenvolvimento de Sistemas
+                                </h3>
+                                <span class="qualification__country">Etec Raposo Tavares</span>
+                                <span class="qualification__year">2020-2023</span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name">
+                                    Bacharel em Engenharia de Software
+                                </h3>
+                                <span class="qualification__country">Universidade São Judas</span>
+                                <span class="qualification__year">?? - ??</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <!-- ========= QUALIFICATION RIGHT ========== -->
+
+                    <div class="qualification__content">
+                        <h3 class="qualification__title">
+                            <i class="ri-pencil-ruler-2-line"></i> Cursos
+                        </h3>
+                        <div class="qualification__info">
+                            <div>
+                                <h3 class="qualification__name">
+                                    Introduction to Computer Cience with Python
+                                </h3>
+                                <span class="qualification__country">Harvard Academy</span>
+                                <span class="qualification__year">2023</span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name">
+                                    Curso de PHP
+                                </h3>
+                                <span class="qualification__country">Curso em Vídeo</span>
+                                <span class="qualification__year">2023</span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__name">
+                                    Curso de Informática Empresarial
+                                </h3>
+                                <span class="qualification__country">Allnet</span>
+                                <span class="qualification__year">2018-2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img">
+
             </section>
 
             <!--==================== PROJECTS ====================-->
             <section class="projects section" id="projects">
-                
+                <h2 class="section__title">Projetos</h2>
+                <span class="section__subtitle">(Não tem nenhuma pokedéx aqui :D )</span>
+
+                <div class="container section__border">
+                    <div class="projects__container swiper">
+                        <div class="swiper-wrapper">
+                            <!--==================== PROJETO 1 ====================-->
+                            <div class="projects__content swiper-slide">
+                                <img src="assets/img/project1.jpg" alt="Project image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle">Assempbol</span>
+                                    <h1 class="projects__title">Plataforma de gerenciam</h1>
+
+                                    <a href="#" class="projects__button">
+                                        Ver mais <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--==================== PROJETO 2 ====================-->
+                            <div class="projects__content swiper-slide">
+                                <img src="assets/img/project2.jpg" alt="Project image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle">Assempbol</span>
+                                    <h1 class="projects__title">Plataforma de gerenciam</h1>
+
+                                    <a href="" class="projects__button">
+                                        Ver mais<i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--==================== PROJETO 3 ====================-->
+                            <div class="projects__content swiper-slide">
+                                <img src="assets/img/project3.jpg" alt="Project image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle">Assempbol</span>
+                                    <h1 class="projects__title">Plataforma de gerenciam</h1>
+
+                                    <a href="" class="projects__button">
+                                        Ver mais<i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--==================== PROJETO 4 ====================-->
+                            <div class="projects__content swiper-slide">
+                                <img src="assets/img/project4.jpg" alt="Project image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle">Assempbol</span>
+                                    <h1 class="projects__title">Plataforma de gerenciam</h1>
+
+                                    <a href="" class="projects__button">
+                                        Ver mais<i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </section>
 
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">Sobre Mim</h2>
+                <span class="section__subtitle"></span>
+
+                <div class="about__container container grid section__border">
+                    <div class="about__card">
+                        <i class="ri-layout-4-line"></i>
+
+                        <h2 class="about__title">
+                            Design <br>
+                            Falido
+                        </h2>
+                        <p class="about__description">
+                            Além de tudo, sou um aficcionado por design e blablabla me contrata porfavor, nunca te pedi nada
+                        </p>
+                        <div class="about__border"></div>
+                    </div>
+
+                    <div class="about__card">
+                        <i class="ri-layout-4-line"></i>
+
+                        <h2 class="about__title">
+                            GameDev <br>
+                            Fracassado
+                        </h2>
+                        <p class="about__description">
+                            Além de tudo, sou um aficcionado por design de jogos e blablabla me contrata porfavor, nunca te pedi nada
+                        </p>
+                        <div class="about__border"></div>
+                    </div>
+
+                    <div class="about__card">
+                        <i class="ri-layout-4-line"></i>
+
+                        <h2 class="about__title">
+                            Porfavor!! <br>
+                            meajuda
+                        </h2>
+                        <p class="about__description">
+                            Além de tudo, sou um desempregado  e plsss me contrata porfavor, nunca te pedi nada mano namoral
+                        </p>
+                        <div class="about__border"></div>
+                    </div>
+                </div>
                 
             </section>
 
             <!--==================== CONTACT ====================-->
-            <section class="contact section" id="contact">
-                
+            <section class="contact section" id="contato">
+                <h2 class="section__title">Contate-me</h2>
+                <span class="section__subtitle">Entre em contato</span>
+
+                <div class="contact__container container grid section__border">
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            <i class="ri-chat-3-line"></i> Vamos trocar uma ideia
+                        </h3>
+
+                        <div class="contact__info">
+                            <div class="contact__data">
+                                <span class="contact__data-title">Email</span>
+                                <span class="contact__data-info">miguew.png@gmail.com</span>
+                            </div>
+
+                            <div class="contact__data">
+                                <span class="contact__data-title">Whatsapp</span>
+                                <span class="contact__data-info">11 9361-89417</span>
+                                <a href="https://api.whatsapp.com/send?phone=5511936189417&text=Hello, World!" target="_blank" class="contact__button">
+                                    Zapear! <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+
+                            <div class="contact__data">
+                                <span class="contact__data-title">Instagram</span>
+                                <span class="contact__data-info">@miguew.png</span>
+                                <a href="https://www.instagram.com/miguew.png/" class="contact__button">
+                                    (Se minha namorada te aceitar) <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            <i class="ri-send-plane-line"></i> Mande me um Email
+                        </h3>
+
+                        <form action="" class="contact__form" id="contact-form">
+                            <div class="contact__form-div">
+                                <label class="contact__form-tag">Nome</label>
+                                <input type="text" name="user_name" required placeholder="Qual seu nome?" class="contact__form-input" id="contact-name">
+                            </div>
+
+                            <div class="contact__form-div">
+                                <label class="contact__form-tag">Email</label>
+                                <input type="email" name="user_email" required placeholder="Qual seu e-mail?" class="contact__form-input" id="contact-email">
+                            </div>
+
+                            <div class="contact__form-div contact__form-area">
+                                <label class="contact__form-tag">Mensagem</label>
+                                <textarea name="user_msg" placeholder="Escreva sua mensagem!" id="contact-msg" class="contact__form-input"></textarea>
+                            </div>
+
+                            <p class="contact__message" id="contact-message"></p>
+
+                            <button class="contact__button" type="submit">
+                                Enviar <i class="ri-arrow-right-up-line"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </section>
         </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-            
+            <div class="footer__container container">
+                <h1 class="footer__title">Miguew</h1>
+                <p>Backend Developer</p>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#home" class="footer__link">Home</a>
+                        <a href="#qualificacao" class="footer__link">Qualificação</a>
+                        <a href="#projetos" class="footer__link">Projetos</a>
+                    </li>
+                </ul>
+                                                            <!-- TODO colocar os links -->
+                <ul class="footer__social">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-file-pdf-line"></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; Copyright Miguew. All rights reserved
+                </span>
+            </div>
         </footer>
 
 
         <!--========== SCROLL UP ==========-->
+
+        <a href="#home" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
         
 
         <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--=============== SWIPER JS ===============-->
         <script src=""></script>
         
         <!--=============== EMAIL JS ===============-->
-        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
