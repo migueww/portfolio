@@ -9,6 +9,10 @@ Bem-vindo ao meu portfólio! Este repositório contém uma coleção dos meus pr
 - [Contato](#contato)
 - [Licença](#licença)
 
+## Habilidades
+
+PHP | Laravel | Python | Git | Javascript (ES6)| Html | Css | MySQL
+
 ## Projetos
 
 Aqui estão alguns dos projetos incluídos neste portfólio:
@@ -30,4 +34,4 @@ Aqui estão alguns dos projetos incluídos neste portfólio:
 
 ## Licença
 
-Este projeto é licenciado sob a [Licença MIT](link_para_licença). Veja o arquivo `LICENSE` para mais detalhes.
+Este projeto é licenciado sob a [Licença MIT](https://github.com/migueww/AcolitApp/blob/main/LICENSE). Veja o arquivo `LICENSE` para mais detalhes.
