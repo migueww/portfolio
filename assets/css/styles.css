@@ -14,11 +14,10 @@
   --body-color: hsl(207, 4%, 99%);
   --container-color: hsl(207, 4%, 95%);
 
-  /* Change the first number */
-  /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
+  /* Gradient da foto principal*/
   --gradient-color: linear-gradient(180deg,
                       hsla(29, 48%, 72%, 0),
-                      rgb(207, 109, 29));
+                      rgb(49, 140, 163));
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -694,6 +693,20 @@ body.dark-theme {
 .projects__container .swiper-pagination-bullet-active{
   background-color: var(--title-color);
 }
+/* PROJECTS BLUR */
+
+header#header.active{
+  visibility: hidden;
+}
+
+a#scroll-up.active{
+  visibility: hidden;
+}
+
+section#projetos.active{
+  filter: blur(20pt);
+}
+
 
 /*=============== CONTACT ===============*/
 
