@@ -17,7 +17,7 @@
   /* Gradient da foto principal*/
   --gradient-color: linear-gradient(180deg,
                       hsla(29, 48%, 72%, 0),
-                      rgb(49, 140, 163));
+                      rgb(21, 72, 131));
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
