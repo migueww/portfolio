@@ -11,7 +11,7 @@ Bem-vindo ao meu portfólio! Este repositório contém uma coleção dos meus pr
 
 ## Habilidades
 
-PHP | Laravel | Python | Git | Javascript (ES6)| Html | Css | MySQL
+NodeJs | Typescript | KoaJs | Git | Fastify | MongoDB
 
 ## Projetos
 
