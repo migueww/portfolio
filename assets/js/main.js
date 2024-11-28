@@ -167,3 +167,9 @@ window.addEventListener('scroll', scrollHeader)
 /*=============== Popup  ===============*/
 
 
+document.querySelectorAll('.projects__content').forEach(content => {
+    content.addEventListener('click', () => {
+        content.classList.toggle('expanded');
+    });
+});
+
