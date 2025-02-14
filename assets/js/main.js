@@ -171,3 +171,13 @@ document.querySelectorAll('.projects__content').forEach(content => {
         content.classList.toggle('active');
     });
 });
+
+/*=============== Qualification  ===============*/
+
+const showMoreBtn = document.getElementById('showMoreBtn');
+const qualificationExtras = document.querySelectorAll('.qualification__extra');
+
+showMoreBtn.addEventListener('click', () => {
+  qualificationExtras.forEach(extra => extra.classList.toggle('active'));
+  showMoreBtn.textContent = qualificationExtras[0].classList.contains('active') ? 'Ver Menos' : 'Ver Mais';
+});
