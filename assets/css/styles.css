@@ -769,6 +769,19 @@ section#projetos.active{
 }
 
 
+@media (hover: none) and (pointer: coarse) {
+  .projects__extra {
+    max-height: 500px;
+    opacity: 1;
+    padding: 15px;
+    transform: translateY(0);
+  }
+  .projects__content {
+    cursor: default;
+  }
+}
+
+
 /*=============== CONTACT ===============*/
 
 .contact__container{
