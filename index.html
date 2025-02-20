@@ -476,7 +476,7 @@
                         <div class="projects__content swiper-slide">
                             <img src="assets/img/project1.png" alt="Project image" class="projects__img">
 
-                            <div class="projects__details">
+                            <div>
                                 <span class="projects__subtitle">CS50w</span>
                                 <h2 class="projects__title">Search - Project 0</h2>
 
@@ -488,6 +488,10 @@
 
                             <div class="projects__extra projects__subtitle">
                                 <p>
+                                    Este projeto é parte do curso CS50W. Consiste numa réplica da
+                                    interface e das funcionalidades da principal página do google, a barra de pesquisa.
+                                </p>
+                                <p class="projects__advanced-description">
                                     Este projeto é parte do curso CS50W. Consiste numa réplica da
                                     interface e das funcionalidades da principal página do google, a barra de pesquisa.
                                 </p>
@@ -518,6 +522,12 @@
                                     refarotação para
                                     melhorar a experiência do usuário.
                                 </p>
+
+                                <p class="projects__advanced-description">
+                                    Acolitap é um sistema que nasceus com o objetivo de ajudar os cerimoniáros na
+                                    atribuição das funções nas missas. <br> O sistema está passando por
+                                    reformulação para melhorar a experiência do usuário e aumentar o alcane do software.
+                                </p>
                                 <br>
                                 <span class="contact__data-info">Tecnologias utilizadas:</span>
                                 <br><br>
@@ -527,11 +537,11 @@
 
                         <!--==================== PROJETO 3 ====================-->
                         <div class="projects__content swiper-slide">
-                            <img src="assets/img/project3.png" alt="Project image" class="projects__img">
+                            <img src="assets/img/project4.jpg" alt="Project image" class="projects__img">
 
                             <div>
-                                <span class="projects__subtitle">O app dos acólitos</span>
-                                <h2 class="projects__title">AcolitApp v1</h2>
+                                <span class="projects__subtitle">Em andamento</span>
+                                <h2 class="projects__title">Em breve...</h2>
 
                                 <a href="https://migueww.github.io/AcolitApp/" target="_blank" class="projects__button">
                                     Acessar<i class="ri-arrow-right-line"></i>
@@ -540,15 +550,15 @@
 
                             <div class="projects__extra projects__subtitle">
                                 <p>
-                                    Acolitap é um sistema que busca ajudar os cerimoniáros na
-                                    atribuição das funções de acólitos em missas. <br> O sistema está passando por
-                                    refarotação para
-                                    melhorar a experiência do usuário.
+                                    
+                                </p>
+                                <p class="projects__advanced-description">
+                                    Projeto em desenvolvimento
                                 </p>
                                 <br>
                                 <span class="contact__data-info">Tecnologias utilizadas:</span>
                                 <br><br>
-                                HTML, CSS e JavaScript.
+                                ...
                             </div>
                         </div>
 
@@ -563,6 +573,19 @@
                                 <a href="" target="_blank" class="projects__button">
                                     Acessar<i class="ri-arrow-right-line"></i>
                                 </a>
+                            </div>
+
+                            <div class="projects__extra projects__subtitle">
+                                <p>
+                                    
+                                </p>
+                                <p class="projects__advanced-description">
+                                    Projeto em desenvolvimento
+                                </p>
+                                <br>
+                                <span class="contact__data-info">Tecnologias utilizadas:</span>
+                                <br><br>
+                                ...
                             </div>
                         </div>
                     </div>
@@ -595,7 +618,7 @@
                     </h2>
                     <p class="about__description">
                         Aos 13 anos, sonhava em criar um jogo com meus amigos.
-                        Para isso, mergulhei na programação, transformando curiosidade em paixão.
+                        Para isso, mergulhei de cabeça na programação, transformando curiosidade em paixão.
                     </p>
                     <div class="about__border"></div>
                 </div>
@@ -759,6 +782,20 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <div class="projects__modal" id="project-modal">
+        <div class="projects__modal-content">
+            <span class="projects__modal-close">&times;</span>
+            <img src="" alt="Modal image" class="projects__modal-img">
+            <h3 class="projects__modal-title"></h3>
+            <p class="projects__modal-subtitle"></p>
+            <div class="projects__modal-description"></div>
+            <div class="projects__modal-tech"></div>
+            <a href="#" target="_blank" class="projects__modal-button">
+                Acessar Projeto <i class="ri-arrow-right-line"></i>
+            </a>
+        </div>
+    </div>
 </body>
 
 </html>

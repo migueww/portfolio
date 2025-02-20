@@ -181,3 +181,54 @@ showMoreBtn.addEventListener('click', () => {
     qualificationExtras.forEach(extra => extra.classList.toggle('active'));
     showMoreBtn.textContent = qualificationExtras[0].classList.contains('active') ? 'Ver Menos' : 'Ver Mais';
 });
+
+/*=============== Popup  ===============*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    const projectContents = document.querySelectorAll('.projects__content');
+    const modal = document.getElementById('project-modal');
+    const closeModal = modal.querySelector('.projects__modal-close');
+
+    projectContents.forEach(project => {
+        project.addEventListener('click', function(e) {
+            if (!e.target.closest('.projects__button')) {
+                const imgSrc = project.querySelector('.projects__img').src;
+                const title = project.querySelector('.projects__title').textContent;
+                const subtitle = project.querySelector('.projects__subtitle').textContent;
+                const description = project.querySelector('.projects__extra').textContent;
+                const advancedDescription = project.querySelector('.projects__advanced-description').textContent;
+                const tech = project.querySelector('.projects__extra').lastChild.textContent;
+                const link = project.querySelector('.projects__button').href;
+
+                modal.querySelector('.projects__modal-img').src = imgSrc;
+                modal.querySelector('.projects__modal-title').textContent = title;
+                modal.querySelector('.projects__modal-subtitle').textContent = subtitle;
+                modal.querySelector('.projects__modal-description').textContent = advancedDescription;
+                modal.querySelector('.projects__modal-tech').textContent = tech;
+                modal.querySelector('.projects__modal-button').href = link;
+                
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; 
+            }
+        });
+    });
+
+    function closeModalFunction() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    closeModal.addEventListener('click', closeModalFunction);
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModalFunction();
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModalFunction();
+        }
+    });
+});

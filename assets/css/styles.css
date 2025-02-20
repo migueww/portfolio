@@ -697,6 +697,9 @@ body.dark-theme {
   margin-bottom: 1.25rem;
   margin: 0.5rem 0 1.25rem;
 }
+.projects__advanced-description {
+  display: none;
+}
 
 .projects__button {
   display: inline-flex;
@@ -771,6 +774,116 @@ section#projetos.active{
   filter: blur(20pt);
 }
 
+.projects__modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 2rem;
+  backdrop-filter: blur(5px);
+}
+
+.projects__modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.projects__modal-content {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 2.5rem 1.5rem 1.5rem;
+  border-radius: 0.75rem;
+  max-width: 600px;
+  width: 90%;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.projects__modal.active .projects__modal-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.projects__modal-close {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.6rem;
+  font-size: 1.3rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.projects__modal-close:hover {
+  color: var(--first-color);
+}
+
+.projects__modal-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1.25rem;
+  margin-top: -0.8rem;
+}
+
+.projects__modal-title {
+  font-size: var(--h2-font-size);
+  margin: 0.5rem 0 1.25rem;
+  color: var(--title-color);
+}
+
+.projects__modal-subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  margin-bottom: 0.5rem;
+}
+
+.projects__modal-description {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.projects__modal-tech {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+  margin-bottom: 1.5rem;
+}
+
+.projects__modal-button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--body-color);
+  transition: background-color 0.3s ease;
+}
+
+.projects__modal-button i {
+  font-size: 1rem;
+  transition: transform 0.3s;
+}
+
+.projects__modal-button:hover i {
+  transform: translateX(0.25rem);
+}
+
+section#projetos.blur-effect {
+  filter: blur(20pt);
+  transition: filter 0.3s ease;
+}
 
 @media (hover: none) and (pointer: coarse) {
   .projects__extra {
